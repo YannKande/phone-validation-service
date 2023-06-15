@@ -17,7 +17,7 @@ import static com.yan.locationservice.utils.Constants.APP_ROOT;
 
 @RestController
 @Log4j2
-//@Api(APP_ROOT)
+@Api(APP_ROOT)
 @RequestMapping()
 public class TestController {
 
@@ -41,7 +41,7 @@ public class TestController {
     }
 
 
-    @GetMapping("/Welcome")
+    @GetMapping("")
     public String hello(){
         String say="Welcome To Location service V1";
         return say;

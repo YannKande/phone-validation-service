@@ -28,7 +28,7 @@ public class SwaggerConfiguration {
                 )
                 .groupName("REST API V1 by Yan Kande")
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.java"))
+                .apis(RequestHandlerSelectors.basePackage("com.yan.locationservice"))
                 .paths(PathSelectors.any())
                 .build();
     }
