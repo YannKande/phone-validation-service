@@ -7,10 +7,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RestController;
 
-@RestController
+
 public class VerifyPhoneController implements VerifyPhoneImpl {
 
-    @Autowired
+
     VerifyPhoneService service;
 
 
@@ -19,8 +19,6 @@ public class VerifyPhoneController implements VerifyPhoneImpl {
 
         return service.locationByPhoneNumber(number);
     }
-
-
 
     @Override
     public ResponseEntity<String> see(PhoneValidRequest request) {
